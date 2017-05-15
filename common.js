@@ -3,8 +3,18 @@ $(function() {
   var $modalItemList = $('#jsi-modal__list');
   var items = [
     { url: 'http://lorempixel.com/400/400/city/', alt: 'まち' },
-    { url: 'http://lorempixel.com/400/400/food/', alt: 'たべもの' },
-    { url: 'http://lorempixel.com/400/400/nightlife/', alt: 'よる' },
+    { url: 'http://lorempixel.com/450/250/nightlife/', alt: 'よる' },
+    { url: 'http://lorempixel.com/350/150/city/', alt: 'まち' },
+    { url: 'http://lorempixel.com/500/100/nightlife/', alt: 'よる' },
+    { url: 'http://lorempixel.com/350/600/city/', alt: 'まち' },
+    { url: 'http://lorempixel.com/200/200/food/', alt: 'たべもの' },
+    { url: 'http://lorempixel.com/150/200/city/', alt: 'まち' },
+    { url: 'http://lorempixel.com/400/300/food/', alt: 'たべもの' },
+    { url: 'http://lorempixel.com/400/300/nightlife/', alt: 'よる' },
+    { url: 'http://lorempixel.com/100/100/food/', alt: 'たべもの' },
+    { url: 'http://lorempixel.com/300/450/nightlife/', alt: 'よる' },
+    { url: 'http://lorempixel.com/200/250/food/', alt: 'たべもの' },
+    { url: 'http://lorempixel.com/50/100/ity/', alt: 'まち' },
   ];
 
   var $items = '';
@@ -16,6 +26,16 @@ $(function() {
         $item += '</li>';
 
     $modalItemList.append($item);
+  });
+
+
+
+  // Masonryのアクティベート
+  $(window).load(function() {
+    $modalItemList.masonry({
+      itemselector: 'g-modal__list-item',
+      columnWidth: 200
+    });
   });
 
 

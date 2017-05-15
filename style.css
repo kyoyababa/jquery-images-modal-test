@@ -6,17 +6,13 @@ img {
   vertical-align: middle;
 }
 
-.g-modal__list {
-  display: flex;
-  justify-content: space-between;
-}
-
-.g-modal__list-item + .g-modal__list-item {
-  margin-left: 20px;
+.g-modal__list-item {
+  padding: 20px;
 }
 
 .g-modal__list-item > a {
   cursor: pointer;
+  display: block;
 }
 
 .g-modal {
